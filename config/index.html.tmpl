@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+	<title><TMPL_VAR name></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="index,follow" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDomains", ["*.jacobian.xyz/piwik"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//jacobian.xyz/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//jacobian.xyz/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+        
+	<link rel="alternate" type="application/rss+xml" href="<TMPL_VAR link>rss20.xml" title="<TMPL_VAR name> RSS" />
+    <link rel="shortcut icon" href="<TMPL_VAR link>images/favicon.ico" />
+</head>
+
+<body class="blog">
+<div id="wrapper" class="hfeed">
+
+<div id="header">
+
+<ul>
+	<li>
+		<a href="http://karengnayong.co.id">forum</a>
+	</li>
+	<li>
+		<a href="https://jacobian.web.id">website</a>
+	</li>
+	<li>
+		<a href="http://karengnayong.com">main</a>
+	</li>
+	<li>
+		<a href="http://jacobian.xyz/question">Question</a>
+	</li>
+</ul>
+
+<div id="orangeHeader">
+	<h1>
+		<a href="<TMPL_VAR link>" title="<TMPL_VAR name>"><span><TMPL_VAR name></span></a>
+	</h1>
+</div>
+
+</div>
+    
+	<div id="main"> 
+		<div id="container">
+
+			<div id="content">
+
+			<TMPL_VAR admin>
+			
+<TMPL_LOOP Items>
+
+	<TMPL_IF new_date>
+		<h3 id="todaysDate"><TMPL_VAR new_date></h3>
+	</TMPL_IF>
+
+	<div class="hentry post">
+		<div class="postHeader">
+
+<TMPL_IF channel_face>
+	<img class="face" src="http://jacobian.xyz/planet/images/<TMPL_VAR channel_face ESCAPE="HTML">" alt="">
+<TMPL_ELSE>
+	<img class="face" src="http://jacobian.xyz/planet/images/din.png" alt="">
+</TMPL_IF>
+
+
+			<h2 class="entry-title"><a href="<TMPL_VAR link ESCAPE="HTML">" title="<TMPL_VAR channel_title_plain ESCAPE="HTML">"><TMPL_VAR title></a></h2>
+
+<h3><TMPL_VAR channel_name></h3>
+
+			<div class="clearBoth"></div>
+		</div>
+		<div class="entry-content">
+			<TMPL_VAR content>
+			<div class="clearBoth"></div>
+		</div>
+		<div class="entry-utility">
+			<span class="cat-links"><a href="<TMPL_VAR link ESCAPE="HTML">"> on <TMPL_VAR date><TMPL_IF category> tagged with <TMPL_VAR category></TMPL_IF></a></span>
+		</div>
+	</div><!-- .post -->
+</TMPL_LOOP>
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+<div>
+
+
+		<div id="secondary" class="aside main-aside">
+			<ul class="xoxo">
+				<li class="widgetcontainer widget_text">
+					<h3 class="widgettitle">About Planet Conundrum</h3>
+					<p>Planet Conundrum is a window into the world, work and lives of its contributors and also its certain events.</p>
+                                                           
+					<p>If you would like your blog aggregated here, then just contact me[at]jacobian[dot]xyz</p>
+				</li>
+				<li class="widgetcontainer widget_extended-categories">
+					<h3 class="widgettitle">Feeds</h3>
+					<ul>
+					<TMPL_LOOP Channels>
+						<li>
+							<a href="<TMPL_VAR url ESCAPE="HTML">" title="subscribe"><img src="http://jacobian.xyz/planet/feed.png" alt="(feed)" /></a> <a <TMPL_IF link>href="<TMPL_VAR link ESCAPE="HTML">" </TMPL_IF><TMPL_IF message>class="message" title="<TMPL_VAR message ESCAPE="HTML">"</TMPL_IF><TMPL_UNLESS message>title="<TMPL_VAR title_plain ESCAPE="HTML">"</TMPL_UNLESS>><TMPL_VAR name></a>
+						</li>
+                                      
+
+					</TMPL_LOOP>  
+             <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=PlanetJacobian', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><p>Enter your email address:</p><p><input type="text" style="width:140px" name="email"/></p><input type="hidden" value="PlanetJacobian" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" value="Subscribe" /><p>Delivered by <a href="https://feedburner.google.com" target="_blank">FeedBurner</a></p></form>
+                                       
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- planet -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8090182968400005"
+     data-ad-slot="6160915778"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+					</ul>
+				</li>
+			</ul>
+		</div><!-- #secondary .aside -->
+		<div class="clearBoth"></div>
+	</div><!-- #main -->
+</div><!-- #wrapper .hfeed -->
+	
+<div id="footer">
+	<div id="siteinfo">        
+		<p>
+			Blog entries aggregated on this page are owned by, and represent the opinion of the author.<br />
+			and I want to say thanks to <a href="http://planet.ubuntu.or.id/">ubuntu-ID</a> for the help in github link and also for its themes<br />
+			Powered by <a href="http://github.com/rubys/venus/">Planet Venus</a> on jacobian &mdash; <a href="http://jacobian.web.id">Feedback</a> <br />
+		</p>
+	</div><!-- #siteinfo -->
+</div><!-- #footer -->
+</body>
+</html>

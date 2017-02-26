@@ -1,0 +1,11 @@
+#logoheader {
+    z-index: 1;
+    background-color: rgb(247, 247, 247);
+    background-image: url("http://images.sixrevisions.com/2009/06/29-06_devthought.jpg");
+    height: 84px;
+    border: 0px;
+    margin: 0px;
+    padding: 1px;
+    background-repeat: repeat-x;
+    border-bottom: 1px solid rgb(153, 153, 153);
+}
